@@ -122,13 +122,13 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
 
 exports.Prisma.PersonagemScalarFieldEnum = {
   id: 'id',
-  Nome: 'Nome',
-  Descricao: 'Descricao',
-  Ataque: 'Ataque',
-  Defesa: 'Defesa',
-  Estamina: 'Estamina',
-  Velocidade: 'Velocidade',
-  Critico: 'Critico'
+  nome: 'nome',
+  descricao: 'descricao',
+  ataque: 'ataque',
+  defesa: 'defesa',
+  estamina: 'estamina',
+  velocidade: 'velocidade',
+  critico: 'critico'
 };
 
 exports.Prisma.SortOrder = {
@@ -137,8 +137,8 @@ exports.Prisma.SortOrder = {
 };
 
 exports.Prisma.personagemOrderByRelevanceFieldEnum = {
-  Nome: 'Nome',
-  Descricao: 'Descricao'
+  nome: 'nome',
+  descricao: 'descricao'
 };
 
 

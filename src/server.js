@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     })
 })
 
-//app.get('/personagem', personagemRouter)
+app.use('/personagem', personagemRouter)
 
 app.listen(3000, () => {
     console.log('Servirdor Rodando no http://localhost:3000')

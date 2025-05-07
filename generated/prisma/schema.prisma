@@ -16,11 +16,11 @@ datasource db {
 
 model personagem {
   id         Int    @id @default(autoincrement())
-  Nome       String @db.VarChar(255)
-  Descricao  String @db.VarChar(255)
-  Ataque     Int
-  Defesa     Int
-  Estamina   Int
-  Velocidade Int
-  Critico    Int
+  nome       String @db.VarChar(255)
+  descricao  String @db.VarChar(255)
+  ataque     Int
+  defesa     Int
+  estamina   Int
+  velocidade Int
+  critico    Int
 }

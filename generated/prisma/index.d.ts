@@ -875,106 +875,106 @@ export namespace Prisma {
 
   export type PersonagemAvgAggregateOutputType = {
     id: number | null
-    Ataque: number | null
-    Defesa: number | null
-    Estamina: number | null
-    Velocidade: number | null
-    Critico: number | null
+    ataque: number | null
+    defesa: number | null
+    estamina: number | null
+    velocidade: number | null
+    critico: number | null
   }
 
   export type PersonagemSumAggregateOutputType = {
     id: number | null
-    Ataque: number | null
-    Defesa: number | null
-    Estamina: number | null
-    Velocidade: number | null
-    Critico: number | null
+    ataque: number | null
+    defesa: number | null
+    estamina: number | null
+    velocidade: number | null
+    critico: number | null
   }
 
   export type PersonagemMinAggregateOutputType = {
     id: number | null
-    Nome: string | null
-    Descricao: string | null
-    Ataque: number | null
-    Defesa: number | null
-    Estamina: number | null
-    Velocidade: number | null
-    Critico: number | null
+    nome: string | null
+    descricao: string | null
+    ataque: number | null
+    defesa: number | null
+    estamina: number | null
+    velocidade: number | null
+    critico: number | null
   }
 
   export type PersonagemMaxAggregateOutputType = {
     id: number | null
-    Nome: string | null
-    Descricao: string | null
-    Ataque: number | null
-    Defesa: number | null
-    Estamina: number | null
-    Velocidade: number | null
-    Critico: number | null
+    nome: string | null
+    descricao: string | null
+    ataque: number | null
+    defesa: number | null
+    estamina: number | null
+    velocidade: number | null
+    critico: number | null
   }
 
   export type PersonagemCountAggregateOutputType = {
     id: number
-    Nome: number
-    Descricao: number
-    Ataque: number
-    Defesa: number
-    Estamina: number
-    Velocidade: number
-    Critico: number
+    nome: number
+    descricao: number
+    ataque: number
+    defesa: number
+    estamina: number
+    velocidade: number
+    critico: number
     _all: number
   }
 
 
   export type PersonagemAvgAggregateInputType = {
     id?: true
-    Ataque?: true
-    Defesa?: true
-    Estamina?: true
-    Velocidade?: true
-    Critico?: true
+    ataque?: true
+    defesa?: true
+    estamina?: true
+    velocidade?: true
+    critico?: true
   }
 
   export type PersonagemSumAggregateInputType = {
     id?: true
-    Ataque?: true
-    Defesa?: true
-    Estamina?: true
-    Velocidade?: true
-    Critico?: true
+    ataque?: true
+    defesa?: true
+    estamina?: true
+    velocidade?: true
+    critico?: true
   }
 
   export type PersonagemMinAggregateInputType = {
     id?: true
-    Nome?: true
-    Descricao?: true
-    Ataque?: true
-    Defesa?: true
-    Estamina?: true
-    Velocidade?: true
-    Critico?: true
+    nome?: true
+    descricao?: true
+    ataque?: true
+    defesa?: true
+    estamina?: true
+    velocidade?: true
+    critico?: true
   }
 
   export type PersonagemMaxAggregateInputType = {
     id?: true
-    Nome?: true
-    Descricao?: true
-    Ataque?: true
-    Defesa?: true
-    Estamina?: true
-    Velocidade?: true
-    Critico?: true
+    nome?: true
+    descricao?: true
+    ataque?: true
+    defesa?: true
+    estamina?: true
+    velocidade?: true
+    critico?: true
   }
 
   export type PersonagemCountAggregateInputType = {
     id?: true
-    Nome?: true
-    Descricao?: true
-    Ataque?: true
-    Defesa?: true
-    Estamina?: true
-    Velocidade?: true
-    Critico?: true
+    nome?: true
+    descricao?: true
+    ataque?: true
+    defesa?: true
+    estamina?: true
+    velocidade?: true
+    critico?: true
     _all?: true
   }
 
@@ -1066,13 +1066,13 @@ export namespace Prisma {
 
   export type PersonagemGroupByOutputType = {
     id: number
-    Nome: string
-    Descricao: string
-    Ataque: number
-    Defesa: number
-    Estamina: number
-    Velocidade: number
-    Critico: number
+    nome: string
+    descricao: string
+    ataque: number
+    defesa: number
+    estamina: number
+    velocidade: number
+    critico: number
     _count: PersonagemCountAggregateOutputType | null
     _avg: PersonagemAvgAggregateOutputType | null
     _sum: PersonagemSumAggregateOutputType | null
@@ -1096,42 +1096,42 @@ export namespace Prisma {
 
   export type personagemSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    Nome?: boolean
-    Descricao?: boolean
-    Ataque?: boolean
-    Defesa?: boolean
-    Estamina?: boolean
-    Velocidade?: boolean
-    Critico?: boolean
+    nome?: boolean
+    descricao?: boolean
+    ataque?: boolean
+    defesa?: boolean
+    estamina?: boolean
+    velocidade?: boolean
+    critico?: boolean
   }, ExtArgs["result"]["personagem"]>
 
 
 
   export type personagemSelectScalar = {
     id?: boolean
-    Nome?: boolean
-    Descricao?: boolean
-    Ataque?: boolean
-    Defesa?: boolean
-    Estamina?: boolean
-    Velocidade?: boolean
-    Critico?: boolean
+    nome?: boolean
+    descricao?: boolean
+    ataque?: boolean
+    defesa?: boolean
+    estamina?: boolean
+    velocidade?: boolean
+    critico?: boolean
   }
 
-  export type personagemOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "Nome" | "Descricao" | "Ataque" | "Defesa" | "Estamina" | "Velocidade" | "Critico", ExtArgs["result"]["personagem"]>
+  export type personagemOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "nome" | "descricao" | "ataque" | "defesa" | "estamina" | "velocidade" | "critico", ExtArgs["result"]["personagem"]>
 
   export type $personagemPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "personagem"
     objects: {}
     scalars: $Extensions.GetPayloadResult<{
       id: number
-      Nome: string
-      Descricao: string
-      Ataque: number
-      Defesa: number
-      Estamina: number
-      Velocidade: number
-      Critico: number
+      nome: string
+      descricao: string
+      ataque: number
+      defesa: number
+      estamina: number
+      velocidade: number
+      critico: number
     }, ExtArgs["result"]["personagem"]>
     composites: {}
   }
@@ -1502,13 +1502,13 @@ export namespace Prisma {
    */
   interface personagemFieldRefs {
     readonly id: FieldRef<"personagem", 'Int'>
-    readonly Nome: FieldRef<"personagem", 'String'>
-    readonly Descricao: FieldRef<"personagem", 'String'>
-    readonly Ataque: FieldRef<"personagem", 'Int'>
-    readonly Defesa: FieldRef<"personagem", 'Int'>
-    readonly Estamina: FieldRef<"personagem", 'Int'>
-    readonly Velocidade: FieldRef<"personagem", 'Int'>
-    readonly Critico: FieldRef<"personagem", 'Int'>
+    readonly nome: FieldRef<"personagem", 'String'>
+    readonly descricao: FieldRef<"personagem", 'String'>
+    readonly ataque: FieldRef<"personagem", 'Int'>
+    readonly defesa: FieldRef<"personagem", 'Int'>
+    readonly estamina: FieldRef<"personagem", 'Int'>
+    readonly velocidade: FieldRef<"personagem", 'Int'>
+    readonly critico: FieldRef<"personagem", 'Int'>
   }
     
 
@@ -1846,13 +1846,13 @@ export namespace Prisma {
 
   export const PersonagemScalarFieldEnum: {
     id: 'id',
-    Nome: 'Nome',
-    Descricao: 'Descricao',
-    Ataque: 'Ataque',
-    Defesa: 'Defesa',
-    Estamina: 'Estamina',
-    Velocidade: 'Velocidade',
-    Critico: 'Critico'
+    nome: 'nome',
+    descricao: 'descricao',
+    ataque: 'ataque',
+    defesa: 'defesa',
+    estamina: 'estamina',
+    velocidade: 'velocidade',
+    critico: 'critico'
   };
 
   export type PersonagemScalarFieldEnum = (typeof PersonagemScalarFieldEnum)[keyof typeof PersonagemScalarFieldEnum]
@@ -1867,8 +1867,8 @@ export namespace Prisma {
 
 
   export const personagemOrderByRelevanceFieldEnum: {
-    Nome: 'Nome',
-    Descricao: 'Descricao'
+    nome: 'nome',
+    descricao: 'descricao'
   };
 
   export type personagemOrderByRelevanceFieldEnum = (typeof personagemOrderByRelevanceFieldEnum)[keyof typeof personagemOrderByRelevanceFieldEnum]
@@ -1908,24 +1908,24 @@ export namespace Prisma {
     OR?: personagemWhereInput[]
     NOT?: personagemWhereInput | personagemWhereInput[]
     id?: IntFilter<"personagem"> | number
-    Nome?: StringFilter<"personagem"> | string
-    Descricao?: StringFilter<"personagem"> | string
-    Ataque?: IntFilter<"personagem"> | number
-    Defesa?: IntFilter<"personagem"> | number
-    Estamina?: IntFilter<"personagem"> | number
-    Velocidade?: IntFilter<"personagem"> | number
-    Critico?: IntFilter<"personagem"> | number
+    nome?: StringFilter<"personagem"> | string
+    descricao?: StringFilter<"personagem"> | string
+    ataque?: IntFilter<"personagem"> | number
+    defesa?: IntFilter<"personagem"> | number
+    estamina?: IntFilter<"personagem"> | number
+    velocidade?: IntFilter<"personagem"> | number
+    critico?: IntFilter<"personagem"> | number
   }
 
   export type personagemOrderByWithRelationInput = {
     id?: SortOrder
-    Nome?: SortOrder
-    Descricao?: SortOrder
-    Ataque?: SortOrder
-    Defesa?: SortOrder
-    Estamina?: SortOrder
-    Velocidade?: SortOrder
-    Critico?: SortOrder
+    nome?: SortOrder
+    descricao?: SortOrder
+    ataque?: SortOrder
+    defesa?: SortOrder
+    estamina?: SortOrder
+    velocidade?: SortOrder
+    critico?: SortOrder
     _relevance?: personagemOrderByRelevanceInput
   }
 
@@ -1934,24 +1934,24 @@ export namespace Prisma {
     AND?: personagemWhereInput | personagemWhereInput[]
     OR?: personagemWhereInput[]
     NOT?: personagemWhereInput | personagemWhereInput[]
-    Nome?: StringFilter<"personagem"> | string
-    Descricao?: StringFilter<"personagem"> | string
-    Ataque?: IntFilter<"personagem"> | number
-    Defesa?: IntFilter<"personagem"> | number
-    Estamina?: IntFilter<"personagem"> | number
-    Velocidade?: IntFilter<"personagem"> | number
-    Critico?: IntFilter<"personagem"> | number
+    nome?: StringFilter<"personagem"> | string
+    descricao?: StringFilter<"personagem"> | string
+    ataque?: IntFilter<"personagem"> | number
+    defesa?: IntFilter<"personagem"> | number
+    estamina?: IntFilter<"personagem"> | number
+    velocidade?: IntFilter<"personagem"> | number
+    critico?: IntFilter<"personagem"> | number
   }, "id">
 
   export type personagemOrderByWithAggregationInput = {
     id?: SortOrder
-    Nome?: SortOrder
-    Descricao?: SortOrder
-    Ataque?: SortOrder
-    Defesa?: SortOrder
-    Estamina?: SortOrder
-    Velocidade?: SortOrder
-    Critico?: SortOrder
+    nome?: SortOrder
+    descricao?: SortOrder
+    ataque?: SortOrder
+    defesa?: SortOrder
+    estamina?: SortOrder
+    velocidade?: SortOrder
+    critico?: SortOrder
     _count?: personagemCountOrderByAggregateInput
     _avg?: personagemAvgOrderByAggregateInput
     _max?: personagemMaxOrderByAggregateInput
@@ -1964,87 +1964,87 @@ export namespace Prisma {
     OR?: personagemScalarWhereWithAggregatesInput[]
     NOT?: personagemScalarWhereWithAggregatesInput | personagemScalarWhereWithAggregatesInput[]
     id?: IntWithAggregatesFilter<"personagem"> | number
-    Nome?: StringWithAggregatesFilter<"personagem"> | string
-    Descricao?: StringWithAggregatesFilter<"personagem"> | string
-    Ataque?: IntWithAggregatesFilter<"personagem"> | number
-    Defesa?: IntWithAggregatesFilter<"personagem"> | number
-    Estamina?: IntWithAggregatesFilter<"personagem"> | number
-    Velocidade?: IntWithAggregatesFilter<"personagem"> | number
-    Critico?: IntWithAggregatesFilter<"personagem"> | number
+    nome?: StringWithAggregatesFilter<"personagem"> | string
+    descricao?: StringWithAggregatesFilter<"personagem"> | string
+    ataque?: IntWithAggregatesFilter<"personagem"> | number
+    defesa?: IntWithAggregatesFilter<"personagem"> | number
+    estamina?: IntWithAggregatesFilter<"personagem"> | number
+    velocidade?: IntWithAggregatesFilter<"personagem"> | number
+    critico?: IntWithAggregatesFilter<"personagem"> | number
   }
 
   export type personagemCreateInput = {
-    Nome: string
-    Descricao: string
-    Ataque: number
-    Defesa: number
-    Estamina: number
-    Velocidade: number
-    Critico: number
+    nome: string
+    descricao: string
+    ataque: number
+    defesa: number
+    estamina: number
+    velocidade: number
+    critico: number
   }
 
   export type personagemUncheckedCreateInput = {
     id?: number
-    Nome: string
-    Descricao: string
-    Ataque: number
-    Defesa: number
-    Estamina: number
-    Velocidade: number
-    Critico: number
+    nome: string
+    descricao: string
+    ataque: number
+    defesa: number
+    estamina: number
+    velocidade: number
+    critico: number
   }
 
   export type personagemUpdateInput = {
-    Nome?: StringFieldUpdateOperationsInput | string
-    Descricao?: StringFieldUpdateOperationsInput | string
-    Ataque?: IntFieldUpdateOperationsInput | number
-    Defesa?: IntFieldUpdateOperationsInput | number
-    Estamina?: IntFieldUpdateOperationsInput | number
-    Velocidade?: IntFieldUpdateOperationsInput | number
-    Critico?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    descricao?: StringFieldUpdateOperationsInput | string
+    ataque?: IntFieldUpdateOperationsInput | number
+    defesa?: IntFieldUpdateOperationsInput | number
+    estamina?: IntFieldUpdateOperationsInput | number
+    velocidade?: IntFieldUpdateOperationsInput | number
+    critico?: IntFieldUpdateOperationsInput | number
   }
 
   export type personagemUncheckedUpdateInput = {
     id?: IntFieldUpdateOperationsInput | number
-    Nome?: StringFieldUpdateOperationsInput | string
-    Descricao?: StringFieldUpdateOperationsInput | string
-    Ataque?: IntFieldUpdateOperationsInput | number
-    Defesa?: IntFieldUpdateOperationsInput | number
-    Estamina?: IntFieldUpdateOperationsInput | number
-    Velocidade?: IntFieldUpdateOperationsInput | number
-    Critico?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    descricao?: StringFieldUpdateOperationsInput | string
+    ataque?: IntFieldUpdateOperationsInput | number
+    defesa?: IntFieldUpdateOperationsInput | number
+    estamina?: IntFieldUpdateOperationsInput | number
+    velocidade?: IntFieldUpdateOperationsInput | number
+    critico?: IntFieldUpdateOperationsInput | number
   }
 
   export type personagemCreateManyInput = {
     id?: number
-    Nome: string
-    Descricao: string
-    Ataque: number
-    Defesa: number
-    Estamina: number
-    Velocidade: number
-    Critico: number
+    nome: string
+    descricao: string
+    ataque: number
+    defesa: number
+    estamina: number
+    velocidade: number
+    critico: number
   }
 
   export type personagemUpdateManyMutationInput = {
-    Nome?: StringFieldUpdateOperationsInput | string
-    Descricao?: StringFieldUpdateOperationsInput | string
-    Ataque?: IntFieldUpdateOperationsInput | number
-    Defesa?: IntFieldUpdateOperationsInput | number
-    Estamina?: IntFieldUpdateOperationsInput | number
-    Velocidade?: IntFieldUpdateOperationsInput | number
-    Critico?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    descricao?: StringFieldUpdateOperationsInput | string
+    ataque?: IntFieldUpdateOperationsInput | number
+    defesa?: IntFieldUpdateOperationsInput | number
+    estamina?: IntFieldUpdateOperationsInput | number
+    velocidade?: IntFieldUpdateOperationsInput | number
+    critico?: IntFieldUpdateOperationsInput | number
   }
 
   export type personagemUncheckedUpdateManyInput = {
     id?: IntFieldUpdateOperationsInput | number
-    Nome?: StringFieldUpdateOperationsInput | string
-    Descricao?: StringFieldUpdateOperationsInput | string
-    Ataque?: IntFieldUpdateOperationsInput | number
-    Defesa?: IntFieldUpdateOperationsInput | number
-    Estamina?: IntFieldUpdateOperationsInput | number
-    Velocidade?: IntFieldUpdateOperationsInput | number
-    Critico?: IntFieldUpdateOperationsInput | number
+    nome?: StringFieldUpdateOperationsInput | string
+    descricao?: StringFieldUpdateOperationsInput | string
+    ataque?: IntFieldUpdateOperationsInput | number
+    defesa?: IntFieldUpdateOperationsInput | number
+    estamina?: IntFieldUpdateOperationsInput | number
+    velocidade?: IntFieldUpdateOperationsInput | number
+    critico?: IntFieldUpdateOperationsInput | number
   }
 
   export type IntFilter<$PrismaModel = never> = {
@@ -2081,53 +2081,53 @@ export namespace Prisma {
 
   export type personagemCountOrderByAggregateInput = {
     id?: SortOrder
-    Nome?: SortOrder
-    Descricao?: SortOrder
-    Ataque?: SortOrder
-    Defesa?: SortOrder
-    Estamina?: SortOrder
-    Velocidade?: SortOrder
-    Critico?: SortOrder
+    nome?: SortOrder
+    descricao?: SortOrder
+    ataque?: SortOrder
+    defesa?: SortOrder
+    estamina?: SortOrder
+    velocidade?: SortOrder
+    critico?: SortOrder
   }
 
   export type personagemAvgOrderByAggregateInput = {
     id?: SortOrder
-    Ataque?: SortOrder
-    Defesa?: SortOrder
-    Estamina?: SortOrder
-    Velocidade?: SortOrder
-    Critico?: SortOrder
+    ataque?: SortOrder
+    defesa?: SortOrder
+    estamina?: SortOrder
+    velocidade?: SortOrder
+    critico?: SortOrder
   }
 
   export type personagemMaxOrderByAggregateInput = {
     id?: SortOrder
-    Nome?: SortOrder
-    Descricao?: SortOrder
-    Ataque?: SortOrder
-    Defesa?: SortOrder
-    Estamina?: SortOrder
-    Velocidade?: SortOrder
-    Critico?: SortOrder
+    nome?: SortOrder
+    descricao?: SortOrder
+    ataque?: SortOrder
+    defesa?: SortOrder
+    estamina?: SortOrder
+    velocidade?: SortOrder
+    critico?: SortOrder
   }
 
   export type personagemMinOrderByAggregateInput = {
     id?: SortOrder
-    Nome?: SortOrder
-    Descricao?: SortOrder
-    Ataque?: SortOrder
-    Defesa?: SortOrder
-    Estamina?: SortOrder
-    Velocidade?: SortOrder
-    Critico?: SortOrder
+    nome?: SortOrder
+    descricao?: SortOrder
+    ataque?: SortOrder
+    defesa?: SortOrder
+    estamina?: SortOrder
+    velocidade?: SortOrder
+    critico?: SortOrder
   }
 
   export type personagemSumOrderByAggregateInput = {
     id?: SortOrder
-    Ataque?: SortOrder
-    Defesa?: SortOrder
-    Estamina?: SortOrder
-    Velocidade?: SortOrder
-    Critico?: SortOrder
+    ataque?: SortOrder
+    defesa?: SortOrder
+    estamina?: SortOrder
+    velocidade?: SortOrder
+    critico?: SortOrder
   }
 
   export type IntWithAggregatesFilter<$PrismaModel = never> = {
