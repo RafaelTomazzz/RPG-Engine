@@ -10,6 +10,17 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+}
+
+model personagem {
+  id  Int  @id @default(autoincrement())
+  Nome String @db.VarChar(255)
+  Descricao String @db.VarChar(255)
+  Ataque Int 
+  Defesa Int
+  Estamina Int
+  Velocidade Int
+  Critico Int
 }
