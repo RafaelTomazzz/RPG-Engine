@@ -3,7 +3,7 @@ import createPersonagemController from '../Controller/Personagem/createPersonage
 import listPersonagemController from '../Controller/Personagem/listPersonagemController.js'
 import getPersonagemController from '../Controller/Personagem/getPersonagemController.js'
 import deletePersonagemController from '../Controller/Personagem/deletePersonagemController.js'
-//import updatePersonagemController from '../Controller/Personagem/updatePersonagemController.js'
+import updatePersonagemController from '../Controller/Personagem/updatePersonagemController.js'
 //import editPersonagemController from '../Controller/Personagem/editPersonagemController.js'
 
 const router = express.Router()
@@ -19,5 +19,6 @@ router.post('/', createPersonagemController)
 router.get('/list', listPersonagemController)
 router.get('/getbyid/:id', getPersonagemController)
 router.delete('/:id', deletePersonagemController)
+router.put('/:id', updatePersonagemController)
 
 export default router

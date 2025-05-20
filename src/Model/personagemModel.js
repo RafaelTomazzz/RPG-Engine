@@ -76,3 +76,24 @@ export async function deletePersonagem(id) {
 
     return result
 }
+
+export async function updatePersonagem(id, personagem) {
+    const result = await prisma.personagem.update({
+        where: {
+            id: id
+        },
+        data: personagem,
+        select: {
+            id: true,
+            nome: true,
+            descricao: true,
+            ataque: true,
+            defesa: true,
+            estamina: true,
+            velocidade: true,
+            critico: true
+        }
+    })
+
+    return result
+}
