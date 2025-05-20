@@ -18,6 +18,6 @@ router.get('/', (req, res) => {
 router.post('/', createPersonagemController)
 router.get('/list', listPersonagemController)
 router.get('/getbyid/:id', getPersonagemController)
-router.delete('/', deletePersonagemController)
+router.delete('/:id', deletePersonagemController)
 
 export default router
