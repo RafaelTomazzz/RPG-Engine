@@ -53,4 +53,26 @@ export async function getbyidPersonagem(id)
             critico: true
         }
     })
+
+    return result
+}
+
+export async function deletePersonagem(id) {
+    const result = await prisma.personagem.delete({
+        where: {
+            id: id
+        },
+        select: {
+            id: true,
+            nome: true,
+            descricao: true,
+            ataque: true,
+            defesa: true,
+            estamina: true,
+            velocidade: true,
+            critico: true
+        }
+    })
+
+    return result
 }
