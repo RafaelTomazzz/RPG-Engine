@@ -4,7 +4,7 @@ import listPersonagemController from '../Controller/Personagem/listPersonagemCon
 import getPersonagemController from '../Controller/Personagem/getPersonagemController.js'
 import deletePersonagemController from '../Controller/Personagem/deletePersonagemController.js'
 import updatePersonagemController from '../Controller/Personagem/updatePersonagemController.js'
-//import editPersonagemController from '../Controller/Personagem/editPersonagemController.js'
+import editPersonagemController from '../Controller/Personagem/editPersonagemController.js'
 
 const router = express.Router()
 
@@ -20,5 +20,6 @@ router.get('/list', listPersonagemController)
 router.get('/getbyid/:id', getPersonagemController)
 router.delete('/:id', deletePersonagemController)
 router.put('/:id', updatePersonagemController)
+router.patch('/:id', editPersonagemController)
 
 export default router

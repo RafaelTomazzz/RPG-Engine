@@ -84,7 +84,6 @@ export async function updatePersonagem(id, personagem) {
         },
         data: personagem,
         select: {
-            id: true,
             nome: true,
             descricao: true,
             ataque: true,
@@ -96,4 +95,25 @@ export async function updatePersonagem(id, personagem) {
     })
 
     return result
+}
+
+export async function updateNomePersonagem(id, nome) {
+    const result = await prisma.personagem.update({
+        where: {
+            id: id
+        },
+        data: {
+            nome: nome
+        },
+        select: {
+            nome: true,
+            descricao: true,
+            ataque: true,
+            defesa: true,
+            estamina: true,
+            velocidade: true,
+            critico: true
+        }
+    })
+    
 }
