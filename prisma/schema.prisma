@@ -17,6 +17,7 @@ model personagem {
   id  Int  @id @default(autoincrement())
   nome String @db.VarChar(255)
   descricao String @db.VarChar(255)
+  vida Int
   ataque Int 
   defesa Int
   estamina Int
