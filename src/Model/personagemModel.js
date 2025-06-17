@@ -3,7 +3,7 @@ import { z } from 'zod'
 
 const prisma = new PrismaClient()
 
-const userSchema = z.object({
+const personagemSchema = z.object({
     id: z.number({
         invalid_type_error: "O id deve ser um valor numérico.",
         required_error: "O id é obrigatório."
@@ -58,6 +58,13 @@ const userSchema = z.object({
     .min(10, "O personagem deve ter no mínimo 10 de critico")
     .max(100, "O personagem deve ter no máximo 100 de critico"),
 })
+
+export const personagemValidator = (personagem, partial = null) => {
+    if(partition) {
+        return personagemSchema.partial(partial).safeParse(personagem)
+    }
+    return personagemSchema.safeParse(personagem)
+}
 
 export async function createPersonagem(personagem){
     const result = await prisma.personagem.create({
