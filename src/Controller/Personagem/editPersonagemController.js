@@ -1,4 +1,4 @@
-import { updateNomePersonagem } from "../../Model/personagemModel.js";
+import { updateNomePersonagem, personagemValidator } from "../../Model/personagemModel.js";
 
 export default async function editPersonagemController(req, res) {
     const { id } = req.params

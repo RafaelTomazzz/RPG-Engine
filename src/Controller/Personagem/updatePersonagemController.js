@@ -17,7 +17,7 @@ export default async function updatePersonagemController(req, res) {
 
     if(!result){
         return res.status(500).json({
-            message: "Erro ao deletar o personagem!"
+            message: "Erro ao alterar o personagem!"
         })
     }
 

@@ -60,7 +60,7 @@ const personagemSchema = z.object({
 })
 
 export const personagemValidator = (personagem, partial = null) => {
-    if(partition) {
+    if(partial) {
         return personagemSchema.partial(partial).safeParse(personagem)
     }
     return personagemSchema.safeParse(personagem)
