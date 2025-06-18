@@ -1,5 +1,6 @@
 import express from "express"
 import personagemRouter from './Router/personagemRouter.js' 
+import armaRouter from './Router/armaRouter.js'
 
 const app = express()
 
@@ -12,6 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/personagem', personagemRouter)
+app.use("/arma", armaRouter)
 
 app.listen(3000, () => {
     console.log('Servirdor Rodando no http://localhost:3000')

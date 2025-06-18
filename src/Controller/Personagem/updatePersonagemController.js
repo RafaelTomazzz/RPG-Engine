@@ -4,7 +4,7 @@ export default async function updatePersonagemController(req, res) {
     const { id } = req.params
     
     const personagem = req.body
-    const { success, error, data } = personagemValidator(personagem)
+    const { success, error, data } = personagemValidator(personagem, {id: true})
     
     if(!success){
         return res.status(400).json({

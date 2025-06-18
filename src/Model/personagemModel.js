@@ -27,35 +27,42 @@ const personagemSchema = z.object({
             invalid_type_error: "A vida deve ser um valor numérico.",
             required_error: "A vida é obrigatório."
         })
-        .min(10, "O personagem deve ter no mínimo 10 de vida")
+        .min(5, "O personagem deve ter no mínimo 5 de vida")
+        .max(100, "O personagem deve ter no máximo 100 de vida"),
+
+    ataque: z.number({
+            invalid_type_error: "A vida deve ser um valor numérico.",
+            required_error: "A vida é obrigatório."
+        })
+        .min(5, "O personagem deve ter no mínimo 5 de vida")
         .max(100, "O personagem deve ter no máximo 100 de vida"),
 
     defesa: z.number({
             invalid_type_error: "A defesa deve ser um valor numérico.",
             required_error: "A defesa é obrigatório."
         })
-        .min(10, "O personagem deve ter no mínimo 10 de defesa")
+        .min(5, "O personagem deve ter no mínimo 5 de defesa")
         .max(100, "O personagem deve ter no máximo 100 de defesa"),
     
     estamina: z.number({
         invalid_type_error: "A estamina deve ser um valor numérico.",
         required_error: "A estamina é obrigatório."
     })
-    .min(10, "O personagem deve ter no mínimo 10 de estamina")
+    .min(5, "O personagem deve ter no mínimo 5 de estamina")
     .max(100, "O personagem deve ter no máximo 100 de estamina"),
     
     velocidade: z.number({
         invalid_type_error: "A velocidade deve ser um valor numérico.",
         required_error: "A velocidade é obrigatório."
     })
-    .min(10, "O personagem deve ter no mínimo 10 de velocidade")
+    .min(5, "O personagem deve ter no mínimo 5 de velocidade")
     .max(100, "O personagem deve ter no máximo 100 de velocidade"),
 
     critico: z.number({
         invalid_type_error: "O critico deve ser um valor numérico.",
         required_error: "O critico é obrigatório."
     })
-    .min(10, "O personagem deve ter no mínimo 10 de critico")
+    .min(5, "O personagem deve ter no mínimo 5 de critico")
     .max(100, "O personagem deve ter no máximo 100 de critico"),
 })
 

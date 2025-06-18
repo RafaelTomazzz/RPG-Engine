@@ -4,7 +4,7 @@ export default async function deletePersonagemController(req, res) {
     const { id } = req.params
 
     const personagem = {id: +id}
-    const { success, error, data } = personagemValidator(personagem, {nome: true, descricao: true, vida: true, defesa: true, estamina: true, velocidade: true, critico: true})
+    const { success, error, data } = personagemValidator(personagem, {nome: true, descricao: true, vida: true, ataque: true, defesa: true, estamina: true, velocidade: true, critico: true})
     
     if(!success){
         return res.status(400).json({
