@@ -1,10 +1,12 @@
 import express from "express"
 import personagemRouter from './Router/personagemRouter.js' 
 import armaRouter from './Router/armaRouter.js'
+import cors from 'cors'
 
 const app = express()
 
 app.use(express.json())
+app.use(cors())
 
 app.get('/', (req, res) => {
     return res.json({
