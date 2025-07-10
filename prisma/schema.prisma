@@ -13,22 +13,43 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model personagem {
-  id  Int  @id @default(autoincrement())
-  nome String @db.VarChar(255)
-  descricao String @db.VarChar(255)
-  vida Int
-  ataque Int 
-  defesa Int
-  estamina Int
-  velocidade Int
-  critico Int
+enum Classe {
+  Mago
+  Guerreiro
+  Arqueiro
+  Assassino
+  Samurai
 }
 
-model arma {
-  id  Int @id @default(autoincrement())
-  nome  String  @db.VarChar(255)
-  descricao String  @db.VarChar(255)
-  ataque  Int
-  estamina  Int
+model Personagem {
+  id             Int              @id @default(autoincrement())
+  nome           String           @db.VarChar(255)
+  descricao      String           @db.VarChar(255)
+  vida           Int
+  ataque         Int
+  defesa         Int
+  estamina       Int
+  velocidade     Int
+  critico        Int
+  classe         Classe
+  PersonagemArma PersonagemArma[]
+}
+
+model Arma {
+  id             Int              @id @default(autoincrement())
+  nome           String           @db.VarChar(255)
+  descricao      String           @db.VarChar(255)
+  ataque         Int
+  estamina       Int
+  classe         Classe
+  PersonagemArma PersonagemArma[]
+}
+
+model PersonagemArma {
+  idPersonagem Int
+  personagem   Personagem @relation(fields: [idPersonagem], references: [id])
+  idArma       Int
+  arma         Arma       @relation(fields: [idArma], references: [id])
+
+  @@id([idPersonagem, idArma])
 }

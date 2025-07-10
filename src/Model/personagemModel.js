@@ -103,7 +103,8 @@ export async function getallPersonagem()
             defesa: true,
             estamina: true,
             velocidade: true,
-            critico: true
+            critico: true,
+            classe: true
         }
     })
     return result
@@ -124,7 +125,8 @@ export async function getbyidPersonagem(id)
             defesa: true,
             estamina: true,
             velocidade: true,
-            critico: true
+            critico: true,
+            classe: true
         }
     })
 
@@ -145,7 +147,8 @@ export async function deletePersonagem(id) {
             defesa: true,
             estamina: true,
             velocidade: true,
-            critico: true
+            critico: true,
+            classe: true
         }
     })
 
@@ -167,7 +170,8 @@ export async function updatePersonagem(id, personagem) {
             defesa: true,
             estamina: true,
             velocidade: true,
-            critico: true
+            critico: true,
+            classe: true
         }
     })
 
@@ -191,7 +195,8 @@ export async function updateNomePersonagem(id, nome) {
             defesa: true,
             estamina: true,
             velocidade: true,
-            critico: true
+            critico: true,
+            classe: true
         }
     })
     

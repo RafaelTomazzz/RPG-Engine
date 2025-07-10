@@ -53,7 +53,8 @@ export async function createArma(arma){
             nome: true,
             descricao: true,
             ataque: true,
-            estamina: true
+            estamina: true,
+            classe: true
         }
     })
 
@@ -67,7 +68,8 @@ export async function getallArma() {
             nome: true,
             descricao: true,
             ataque: true,
-            estamina: true
+            estamina: true,
+            classe: true
         }
     })
 
@@ -84,7 +86,8 @@ export async function getbyidArma(id) {
             nome: true,
             descricao: true,
             ataque: true,
-            estamina: true
+            estamina: true,
+            classe: true
         }
     })
 
@@ -101,7 +104,8 @@ export async function deleteArma(id) {
             nome: true,
             descricao: true,
             ataque: true,
-            estamina: true
+            estamina: true,
+            classe: true
         }
     })
 
@@ -119,7 +123,8 @@ export async function updateArma(id, arma){
             nome: true,
             descricao: true,
             ataque: true,
-            estamina: true
+            estamina: true,
+            classe: true
         }
     })
 
@@ -139,7 +144,8 @@ export async function updateNomeArma(id, nome) {
             nome: true,
             descricao: true,
             ataque: true,
-            estamina: true
+            estamina: true,
+            classe: true
         }
     })
     
